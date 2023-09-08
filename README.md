@@ -51,7 +51,7 @@ We can select whatever action we want. I chose **'C'** to pipe all the Issue dat
 
 The script will continue to prompt us for an action. To end, enter `a` or do `ctrl + c`/`ctrl + d`. Next, we'll gather some statistics on how long Issues stay open for.
 
-<img src="/media/usage_stats.png" alt="showing lifecycle stats success" width="800"/>
+<img src="/media/lifecycle_stats.png" alt="showing lifecycle stats success" width="800"/>
 
 #### Option 3
 
