@@ -31,17 +31,21 @@ Run the program by using the following command (I use `python3` not `python` bec
 python3 CLIScrapeWC.py
 ```
 
-It will then ask for your GitHub token. Paste it (no spaces).
-
 ### Example
 
-Provide the correct GitHub token. This was sucessful because it fetched 410 Issues.
-![Image showing fetch success]('media/usage_stats.png')
+1. Run the script via `python3 CLIScrapeWC.py` (or whatever is compatible with your Python version)
+2. It will then ask you for your GitHub token. Paste it (**no spaces**!).
+3. It successfully fetched all the GitHub Issues.
 
-Select option C: Pipe All Issues to a File. This was successful because of the message.
-**Note: this can take a while to write all the Issues to 1 file.**
-![Image showing pipe success]('media/pipe_file.png')
+![Image showing fetch success]('https://github.com/ntrappe-msft/ScrapeWindowsContainers/blob/main/media/token_success.png')
 
-Select option E: Issue Lifecycle Statistics. Here, we can see the avergage, median,
-min, and max times it takes for an Issue to be closed from opening.
-![Image showing stats success]('media/token_success.png')
+4. Now we can select an option. I wanted to pipe all the issues to a file called `broski.txt`.
+5. **This can take up to 1 or 2 minutes to finish if there are many Issues**. It was successful.
+
+![Image showing pipe success](https://github.com/ntrappe-msft/ScrapeWindowsContainers/blob/main/media/pipe_file.png')
+
+6. It will continue to prompt you until you exit (`a`, `ctrl + c`, or `ctrl + d`).
+7. I chose option E to get statistics.
+8. It was successful and shows the avergae, median, min, and max times it takes for an Issue to be closed.
+
+![Image showing stats success]('https://github.com/ntrappe-msft/ScrapeWindowsContainers/blob/main/media/usage_stats.png')
