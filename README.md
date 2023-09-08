@@ -33,19 +33,34 @@ python3 CLIScrapeWC.py
 
 ### Example
 
-1. Run the script via `python3 CLIScrapeWC.py` (or whatever is compatible with your Python version)
-2. It will then ask you for your GitHub token. Paste it (**no spaces**!).
-3. It successfully fetched all the GitHub Issues.
+#### Start Up
+
+Run the script via `python3 CLIScrapeWC.py` or `python CLIScrapeWC.py` (depends on your Python version). When asked for your GitHub token, paste it (no spaces).
 
 <img src="/media/token_success.png" alt="showing fetch success" width="800"/>
 
-4. Now we can select an option. I wanted to pipe all the issues to a file called `broski.txt`.
-5. **This can take up to 1 or 2 minutes to finish if there are many Issues**. It was successful.
+#### Option 1
+
+We can select whatever action we want. I chose **'C'** to pipe all the Issue data to a file called `broski.txt`. It's recommended to use a textfile. **NOTE:** This can take up to 1 or 2 minutes to process as it's length to write 400+ Issues to a file.
 
 <img src="/media/pipe_file.png" alt="showing pipe success" width="800"/>
 
-6. It will continue to prompt you until you exit (`a`, `ctrl + c`, or `ctrl + d`).
-7. I chose option E to get statistics.
-8. It was successful and shows the avergae, median, min, and max times it takes for an Issue to be closed.
+<img src="/media/broski.png" alt="textfile with issue" width="800"/>
 
-<img src="/media/usage_stats.png" alt="showing stats success" width="800"/>
+#### Option 2
+
+The script will continue to prompt us for an action. To end, enter `a` or do `ctrl + c`/`ctrl + d`. Next, we'll gather some statistics on how long Issues stay open for.
+
+<img src="/media/usage_stats.png" alt="showing lifecycle stats success" width="800"/>
+
+#### Option 3
+
+Let's also find out which are the most popular images on this GitHub by using option **'F'**.
+
+<img src="/media/image_stats.png" alt="showing usage of images" width="800"/>
+
+#### Option 4
+
+To see what are all the Issues we've fetched from GitHub, we can print the titles out using option **'B'**.
+
+<img src="/media/issue_titles.png" alt="showing a snapshot of some titles" width="800"/>
